@@ -9,9 +9,9 @@ formData.append("remember-me", "false");
 formData.append("submit", "Login");
     var xhr = new XMLHttpRequest();
 xhr.withCredentials = true;
-    xhr.open('POST', 'https://dev.fareye.co/app/authentication',true);
+    xhr.open('POST', 'http://localhost:8080/app/authentication',true);
     xhr.onreadystatechange = function() {
-window.location = 'https://dev.fareye.co/';
+window.location = 'http://localhost:8080/';
       };
 xhr.send(formData);
 }
