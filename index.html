@@ -3,15 +3,15 @@
     <script>
     function myFunction(){
 var formData = new FormData();
-formData.append("j_username", "ct04_admin");
+formData.append("j_username", "qa_admin");
 formData.append("j_password", "8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918");
 formData.append("remember-me", "false");
 formData.append("submit", "Login");
     var xhr = new XMLHttpRequest();
 xhr.withCredentials = true;
-    xhr.open('POST', 'https://4002afcd688e.ngrok.io/app/authentication',true);
+    xhr.open('POST', 'https://qatest.fareye.co/app/authentication',true);
     xhr.onreadystatechange = function() {
-window.location = 'https://4002afcd688e.ngrok.io/';
+window.location = 'https://qatest.fareye.co/';
       };
 xhr.send(formData);
 }
