@@ -3,15 +3,15 @@
     <script>
     function myFunction(){
 var formData = new FormData();
-formData.append("j_username", "smoke_admin");
-formData.append("j_password", "312c2dd0b8bc61d02e5539c650f5911488a844e2f8cecc0b237cd38c8400bff3");
+formData.append("j_username", "ct04_admin");
+formData.append("j_password", "8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918");
 formData.append("remember-me", "false");
 formData.append("submit", "Login");
     var xhr = new XMLHttpRequest();
 xhr.withCredentials = true;
-    xhr.open('POST', 'https://dev.fareye.co/app/authentication',true);
+    xhr.open('POST', 'https://4002afcd688e.ngrok.io/app/authentication',true);
     xhr.onreadystatechange = function() {
-window.location = 'https://dev.fareye.co/';
+window.location = 'https://4002afcd688e.ngrok.io/';
       };
 xhr.send(formData);
 }
